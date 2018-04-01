@@ -9,7 +9,9 @@ $(document).ready(function(){
   //for loop to create buttons
   for (var i = 0; i < topics.length; i++) {
     
-    
+  function responseFunc (response){
+    console.log(response);
+  }
     
     buttonsVar += "<button type='button'>" + topics[i] + "</button>";
   }
@@ -20,7 +22,16 @@ $(document).ready(function(){
     event.preventDefault();
   });
 
-
+  $("#buttons").on("click", "button", function(){
+    var buttonVal =  $(this).text()
+    
+    var queryUrl = "http://api.giphy.com/GET/v1/gifs/search?q=" + buttonVal + "&api_key=B7dCpS1izEEO7K02H2BPX6BpkfJGwL3V&limit=10";
+    
+    $.ajax({
+      url: queryUrl,
+      type: "GET"
+    }).then(responseFunc);
+  });
 
 
 });
