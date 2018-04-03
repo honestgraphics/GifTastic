@@ -1,0 +1,59 @@
+body {
+  background-image: url("https://image.freepik.com/free-vector/abstract-background-with-a-watercolor-texture_1048-2144.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+#buttons {
+  margin-top: 15px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#buttons button {
+  border: 1px black;
+  height: 35px;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  
+  margin-bottom: 50px;
+  font-family: 'Passion One', cursive;
+  border-radius: 7px;
+}
+
+div#gifs {
+  margin: 30px;
+  
+}
+
+#gifs div {
+  display: inline-block;
+  margin: 2%;
+  float: left;
+}
+
+#gifwrapper #gifs div img  {
+  height: 180px;
+}
+
+
+
+#gifs div p {
+  margin-bottom: 5px;
+  font-size: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: left;
+}
+
+#title {
+  font-family: 'Passion One', cursive;
+  font-size: 90px;
+  color: white;
+  text-shadow: 1.5px 1.5px rgb(82, 80, 80);
+}
